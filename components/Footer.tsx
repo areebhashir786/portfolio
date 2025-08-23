@@ -4,6 +4,8 @@ import MagicButton from "./MagicButton";
 import Link from "next/link";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear(); // Get the current year dynamically
+
   return (
     <footer className="w-full pt-20 pb-10 bg-gray-900" id="contact">
       <div className="flex flex-col items-center">
@@ -25,7 +27,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light text-gray-400">
-          Copyright © 2024 Areeb Hashir
+          Copyright © {currentYear} Areeb Hashir
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
