@@ -1,7 +1,7 @@
 export const navItems = [
-  { name: "About", link: "#about" },
+  { name: "Home", link: "" },
+  { name: "Skills", link: "#skills" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -73,8 +73,8 @@ export const projects = [
   {
     id: 1,
     title: "HealthTalk AI",
-    des: "Transform healthcare with AI Medical Voice Agents. HealthTalk-AI provides 24/7 intelligent medical support using conversational AI. It enables users to triage symptoms, book appointments, and deliver empathetic care through voice-first automation",
-    img: "/p1.svg",
+    des: "HealthTalk-AI transforms healthcare with 24/7 medical voice agents. It uses conversational AI to triage symptoms, book appointments, and provide empathetic, voice-first care.",
+    img: "/healthtalk.png",
     iconLists: [
       "/next.svg",
       "/ts.svg",
@@ -88,7 +88,7 @@ export const projects = [
     id: 2,
     title: "Ilmversity",
     des: "An educational website built with MERN stack that simplifies academic and school management for coaching centers, schools, and institutions.",
-    img: "/p2.svg",
+    img: "/dark.png",
     iconLists: [
       "/react.svg",
       "/nodejs.svg",
@@ -102,7 +102,7 @@ export const projects = [
     id: 3,
     title: "Telus",
     des: "Telecommunication platform designed with the MERN stack to handle customer services, billing systems, and digital engagement.",
-    img: "/p3.svg",
+    img: "/telus.png",
     iconLists: [
       "/react.svg",
       "/nodejs.svg",
@@ -116,7 +116,7 @@ export const projects = [
     id: 4,
     title: "Trakwork",
     des: "A one-stop solution for self-employed professionals to manage profiles, timesheets, expenses, and auto-generate invoices. Built with the MEAN stack.",
-    img: "/p4.svg",
+    img: "/trakwork.png",
     iconLists: [
       "/angular.svg",
       "/nodejs.svg",
@@ -130,15 +130,31 @@ export const projects = [
     id: 5,
     title: "TUA Website",
     des: "A real estate website developed using React and Django to showcase properties, manage listings, and streamline real estate transactions.",
-    img: "/p5.svg",
-    iconLists: ["/react.svg", "/django.svg", "/python.svg"],
+    img: "/tua.png",
+    iconLists: ["/react.svg", "/redux.svg", "tailwind-css.svg", "/django.svg"],
     link: "http://tuaonboarding.wai.uk/",
   },
   {
     id: 6,
+    title: "TUA Admin Portal",
+    des: "An admin portal built with React and Django for managing real estate operations, including property listings, agent onboarding, user submissions, and transaction oversight.",
+    img: "/tua-admin.png",
+    iconLists: ["/react.svg", "/redux.svg", "tailwind-css.svg", "/django.svg"],
+    link: "http://tuaonboardingadmin.wai.uk/submissions",
+  },
+  {
+    id: 7,
+    title: "Emergitel",
+    des: "An official website built with Next.js, delivering a modern, fast, and scalable digital presence for the company.",
+    img: "/emergitel.png",
+    iconLists: ["/next.svg", "/ts.svg", "/tailwind-css.svg"],
+    link: "https://emergitel.com/",
+  },
+  {
+    id: 8,
     title: "PRF Portal",
     des: "Recruitment portal built with the MERN stack, enabling recruiters to manage resumes, approvals, and hiring workflows efficiently.",
-    img: "/p6.svg",
+    img: "/prf.png",
     iconLists: [
       "/react.svg",
       "/nodejs.svg",
@@ -146,15 +162,7 @@ export const projects = [
       "/mysql.svg",
       "/redux.svg",
     ],
-    link: "https://prfportal.com/",
-  },
-  {
-    id: 7,
-    title: "Emergitel",
-    des: "An official website built with Next.js, delivering a modern, fast, and scalable digital presence for the company.",
-    img: "/p7.svg",
-    iconLists: ["/next.svg", "/ts.svg", "/tailwind-css.svg"],
-    link: "https://emergitel.com/",
+    link: "https://prf.mobilelive.ca/",
   },
 ];
 
@@ -259,14 +267,12 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-  },
-  {
-    id: 2,
-    img: "/twit.svg",
+    link: "https://github.com/areebhashir786",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/areeb-hashir-a75697141/",
   },
 ];
 

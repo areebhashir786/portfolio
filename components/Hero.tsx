@@ -7,6 +7,10 @@ import { FaLocationArrow } from "react-icons/fa6";
 const Hero = () => {
   return (
     <div className="relative pt-36 pb-20 mt-24">
+      {/* Background grid */}
+      <div className="w-full absolute left-0 bottom-0 min-h-96">
+        <img src="/footer-grid.svg" alt="grid" className="w-full opacity-50" />
+      </div>
       {/* Spotlights */}
       <div>
         <Spotlight
@@ -44,7 +48,11 @@ const Hero = () => {
             modern, and efficient web solutions.
           </p>
 
-          <a>
+          <a
+            href="https://drive.google.com/file/d/1_P2U3PC3-3FGMBM7R1UBhKZNLExHtOXq/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <MagicButton
               title="Download Resume"
               icon={<FaLocationArrow />}

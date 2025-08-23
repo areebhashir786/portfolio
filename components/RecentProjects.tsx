@@ -7,76 +7,56 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="mt-24 py-20">
-      <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
-      </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
-        {projects.map((item) => (
-          <div
-            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
-            key={item.id}
-          >
-            <PinContainer
-              title="/ui.aceternity.com"
-              href="https://twitter.com/mannupaaji"
+    <section id="projects" className="py-20 bg-gr">
+      <div className="container mx-auto px-5 max-w-[1200px]">
+        <h1 className="text-center text-4xl font-extrabold text-white mb-6">
+          A small selection of{" "}
+          <span className="text-purple">recent projects</span>
+        </h1>
+        <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
+          {projects.map((item) => (
+            <div
+              className="flex flex-col items-center bg-gray-800 p-6 rounded-lg shadow-lg w-full sm:w-[48%] lg:w-[30%] hover:scale-105 transition-transform"
+              key={item.id}
             >
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
-                <div
-                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
-                  style={{ backgroundColor: "#13162D" }}
-                >
-                  <img src="/bg.png" alt="bgimg" />
-                </div>
+              <div className="relative w-full h-48 overflow-hidden rounded-lg mb-4">
                 <img
                   src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                  alt={item.title}
+                  className="w-full h-full object-cover"
                 />
               </div>
-
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold text-xl text-white mb-2">
                 {item.title}
               </h1>
-
-              <p
-                className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                style={{
-                  color: "#BEC1DD",
-                  margin: "1vh 0",
-                }}
-              >
+              <p className="text-gray-400 text-sm mb-4 line-clamp-5">
                 {item.des}
               </p>
-
-              <div className="flex items-center justify-between mt-7 mb-3">
+              <div className="flex items-center justify-between w-full">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                      style={{
-                        transform: `translateX(-${5 * index + 2}px)`,
-                      }}
+                      className="border border-white/[.2] rounded-full bg-black w-10 h-10 flex justify-center items-center -ml-2"
                     >
-                      <img src={icon} alt="icon5" className="p-2" />
+                      <img src={icon} alt="icon" className="p-2" />
                     </div>
                   ))}
                 </div>
-
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
-                </div>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-purple text-sm"
+                >
+                  Check Live Site <FaLocationArrow className="ml-2" />
+                </a>
               </div>
-            </PinContainer>
-          </div>
-        ))}
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

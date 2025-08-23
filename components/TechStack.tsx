@@ -4,13 +4,13 @@ import Image from "next/image";
 
 const TechStack = () => {
   return (
-    <section className="mt-40 py-20 px-10 bg-gray-900">
-      <div className="container mx-auto px-5">
+    <section id="skills" className="py-20 px-5 bg-gray-900">
+      <div className="container mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-4xl font-extrabold text-white mb-6">
+        <h2 className="text-center text-3xl sm:text-4xl font-extrabold text-white mb-6">
           My Skills & Expertise
         </h2>
-        <p className="text-center text-gray-400 text-lg mb-12">
+        <p className="text-center text-gray-400 text-base sm:text-lg mb-12">
           A blend of technologies and tools I work with to design, build, and
           optimize solutions.
         </p>
@@ -25,11 +25,11 @@ const TechStack = () => {
               <Image
                 src={tech.img}
                 alt={tech.name}
-                className="w-16 h-16 mb-4 object-contain"
+                className="w-12 h-12 sm:w-16 sm:h-16 mb-4 object-contain"
                 width={64}
                 height={64}
               />
-              <p className="text-white text-center text-sm font-medium">
+              <p className="text-white text-center text-xs sm:text-sm font-medium">
                 {tech.name}
               </p>
             </div>
