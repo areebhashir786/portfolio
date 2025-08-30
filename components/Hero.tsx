@@ -49,7 +49,7 @@ const Hero = () => {
           </p>
 
           <a
-            href="https://drive.google.com/file/d/1_P2U3PC3-3FGMBM7R1UBhKZNLExHtOXq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1DWlNekjLLuDXaicT1BS6mHvA-tBurQHE/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
